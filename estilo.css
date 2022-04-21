@@ -30,13 +30,32 @@ header {
 }
 .logoPagina {
   height: 31px;
+  animation: rotacion 1s ease 0s 3 normal forwards;
+}
+@keyframes rotacion {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .letraLogoPagina {
   font-size: 20px;
   text-shadow: #d0d4d7 0 8px 8px;
+  animation: agrandar 1s ease 0s 3 normal forwards;
 }
+@keyframes agrandar {
+  0% {
+    transform: scale(0.5);
+  }
 
+  100% {
+    transform: scale(1);
+  }
+}
 .contenedor-nav {
   display: grid;
   justify-items: center;
