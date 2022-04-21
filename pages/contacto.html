@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de prueba</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+
+<body>
+    <header>
+        <nav class="contenedor-nav">
+            <div class="logo-nav">
+                <a href="../index.html">
+                    <img class="logoPagina" src="../iconos/logoPagina.svg" alt="logoPagina">
+                    <span class="letraLogoPagina">Mi Proyecto</span>
+                </a>
+            </div>
+            <div class="navegacion-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="overclocks.html">Overclocks</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <h2>Contacto</h2>
+        <form>
+            <div class="formulario">
+                <label for="nombre">Tu Nombre</label>
+                <input type="text" placeholder="El pepe" required="" name="nombre" id="nombre">
+            </div>
+            <div class="formulario">
+                <label for="apellido">Apellido</label>
+                <input type="text" placeholder="Cabeza" name="apellido" id="apellido">
+            </div>
+            <div class="formulario">
+                <label for="provincia">Tu Provincia</label>
+                <select id="provincia">
+                    <option value="seleccion">--Seleccione--</option>
+                    <option value="ba">Buenos Aires</option>
+                    <option value="ca">Catamarca</option>
+                    <option value="ch">Chaco</option>
+                    <option value="ct">Chubut</option>
+                    <option value="cb">Cordoba</option>
+                    <option value="cr">Chaco</option>
+                    <option value="er">Entre Rios</option>
+                    <option value="fo">Formosa</option>
+                    <option value="jy">Jujuy</option>
+                    <option value="lp">La Pampa</option>
+                    <option value="lr">La Rioja</option>
+                    <option value="mi">Misiones</option>
+                    <option value="nqn">Neuquén</option>
+                    <option value="rn">Rio Negro</option>
+                    <option value="sa">Salta</option>
+                    <option value="sj">San Juan</option>
+                    <option value="sc">Santa Cruz</option>
+                    <option value="sf">Santa Fe</option>
+                    <option value="se">Santiago Del Estero</option>
+                    <option value="tf">Tierra Del Fuego</option>
+                    <option value="tu">Tucumán</option>
+                </select> <br>
+            </div>
+            <div class="formulario">
+                <label for="localidad">Tu Localidad</label>
+                <input type="text" placeholder="Cordoba" name="localidad" id="localidad">
+            </div>
+            <div class="formulario">
+                <label for="email">Tu Email</label>
+                <input type="email" name="email" placeholder="tumeil@hotmail.com" name="email" id="email">
+            </div>
+            <div class="formulario">
+                <label for="telefono">Tu Telefono</label>
+                <input type="text" name="telefono" placeholder="351123456" name="telefono" id="telefono">
+            </div>
+            <div class="formulario span2 ">
+                <label for="consulta">Producto relacionado a tu consulta</label>
+                <input type="text" placeholder="Cualquier producto" name="consulta" id="consulta"><br>
+            </div>
+            <div class="formulario span2 ">
+                <label for="consulta-1">Tu consulta</label>
+                <textarea name="consulta-1" id="consulta-1" cols="30" rows="10"></textarea>
+            </div>
+            <div class="formulario span2">
+                <label for="sino">Quiero recibir información de nuestros productos</label>
+                <input type="checkbox" name="sino" id="sino">
+            </div>
+
+            <div class="formulario span2 formulario-boton">
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="ubicacion-footer">
+                <h5>Ubicación</h5>
+                <div class="container-ubicacion">
+                    <div>
+                        <img class="iconos-footer" src="../iconos/location.svg" alt="ubi">
+                        <span>Av. Vélez Sarsfield 361</span>
+                    </div>
+                    <div>
+                        <img class="iconos-footer" src="../iconos/phone.svg" alt="Telefono">
+                        <span>0351 570-4199</span>
+                    </div>
+                    <div>
+                        <img class="iconos-footer" src="../iconos/envelope.svg" alt="Correo">
+                        <span>micorreo@miprimerapagina.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="iframe-footer">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13619.171116966114!2d-64.1881822!3d-31.4198349!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a32dcf5d747f%3A0x40373220b29140ac!2sPatio%20Olmos%20Shopping!5e0!3m2!1ses!2sar!4v1650506057646!5m2!1ses!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="categorias-footer">
+                <h5>Categorias</h5>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="productos.html">Productos</a>
+                    </li>
+                    <li>
+                        <a href="overclocks.html">Overclocks</a>
+                    </li>
+                    <li>
+                        <a href="galeria.html">Galeria</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="seguinos-footer">
+                <h5>Seguinos!</h5>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/olmos.shopping/" target="_blank"><img class="iconos-footer"
+                                src="../iconos/facebook.svg" alt="facebook"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/user/amamoslamoda" target="_blank"><img class="iconos-footer"
+                                src="../iconos/youtube.svg" alt="youtube"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/patioolmosmoda" target="_blank"><img class="iconos-footer"
+                                src="../iconos/twitters.svg" alt="twitter"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/patioolmosshopping/" target="_blank"><img
+                                class="iconos-footer" src="../iconos/instagram.svg" alt="instagram"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
