@@ -131,7 +131,22 @@ h2 {
   text-align: center;
   text-shadow: #d0d4d7 0 8px 8px;
   letter-spacing: 14.5px;
+  display: block;
+  padding: 0 0 15px;
+  position: relative;
 }
+h2:after {
+  content: "";
+  display: block;
+  background: #d0d4d7;
+  width: 40px;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+}
+
 .primeraLetraMayuscula {
   letter-spacing: 1px;
   padding-top: 30px;
@@ -181,6 +196,13 @@ table tbody tr td {
 }
 
 /* Overcloks */
+.centrado-subtitulo-tarjeta {
+  margin: 9px;
+  vertical-align: middle;
+}
+.centrado {
+  vertical-align: middle;
+}
 .container-card {
   display: flex;
   flex-wrap: wrap;
@@ -189,6 +211,7 @@ table tbody tr td {
   width: 300px;
   margin: 16px auto;
   line-height: 2;
+  padding: 30px 0px;
 }
 
 @media screen and (min-width: 768px) {
