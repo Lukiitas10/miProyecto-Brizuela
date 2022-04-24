@@ -467,7 +467,77 @@ form {
   outline: none;
   box-shadow: 3px 0px 20px rgba(165, 165, 165, 0.4);
 }
+.formulario-boton {
+  display: flex;
+  justify-content: space-evenly;
+}
+.gradianteYAnimacion {
+  background-image: linear-gradient(
+    to right bottom,
+    #ffffff,
+    #b9b9b9,
+    #777777,
+    #3b3b3b,
+    #000000
+  );
+  border: none;
+  height: 30px;
+  width: 80px;
+}
 
+.gradianteYAnimacion {
+  -webkit-animation-name: derecha;
+  animation-name: derecha;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes derecha {
+  0%,
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+@keyframes derecha {
+  0%,
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
 /* Footer */
 
 footer {
