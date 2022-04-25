@@ -108,6 +108,50 @@ main {
 
 .container-titulo {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.carrusel {
+  width: 100%;
+  overflow: hidden;
+}
+.carrusel ul {
+  display: flex;
+  width: 400%;
+  animation: slide 14s infinite alternate ease;
+}
+.carrusel li {
+  width: 100%;
+}
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
 }
 .miTitulo {
   width: 100%;
