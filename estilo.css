@@ -350,6 +350,17 @@ table tbody tr td {
   background-color: #ed1c24;
 }
 
+.agregado {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.agregado p {
+  border: solid;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 20px;
+}
 /* Overcloks */
 .centrado-subtitulo-tarjeta {
   margin: 9px;
