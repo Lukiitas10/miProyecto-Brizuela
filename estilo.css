@@ -27,6 +27,7 @@ header {
   border-bottom: #808080 3px solid;
   position: sticky;
   top: 0px;
+  z-index: 1000;
 }
 .logoPagina {
   height: 31px;
