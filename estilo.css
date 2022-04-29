@@ -27,6 +27,7 @@ header {
   border-bottom: #808080 3px solid;
   position: sticky;
   top: 0px;
+  z-index: 1000;
 }
 .logoPagina {
   height: 31px;
@@ -324,7 +325,7 @@ table tbody tr td {
   flex-wrap: wrap;
 }
 .tarjeta-img {
-  width: 294px;
+  width: 292px;
   height: 294px;
 }
 .cardAncho {
