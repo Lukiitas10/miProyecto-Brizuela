@@ -6,39 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto de prueba</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../estilo.css">
 </head>
 
-<body>
-    <header>
-        <nav class="contenedor-nav">
-            <div class="logo-nav">
-                <a href="../index.html">
-                    <img class="logoPagina" src="../iconos/logoPagina.svg" alt="logoPagina">
+<body class="bg-dark text-white ">
+    <header class="border-bottom">
+        <nav class=" navbar navbar-expand-sm bg-dark navbar-dark ">
+            <div class=" container-fluid ">
+                <a class=" navbar-brand d-flex flex-column align-items-center contenedor-logo rounded-2"
+                    href="index.html">
+                    <img class="logoPagina" src="../iconos/logoPagina.svg" alt="Avatar Logo" style="width:40px;">
                     <span class="letraLogoPagina">Mi Proyecto</span>
                 </a>
-            </div>
-            <div class="navegacion-nav">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="overclocks.html">Overclocks</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link rounded-2" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link rounded-2" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-2" href="overclocks.html">Overclocks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-2" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
 
-        <h2>Productos</h2>
-
-        <div>
-            <table>
+        <h2 class="m-3 fs-2">Productos</h2>
+        <div class="table-responsive mb-3">
+            <table class="table-dark">
                 <thead>
                     <th> Gpu</th>
                     <th>Precio</th>
@@ -194,36 +210,49 @@
                 </tbody>
             </table>
         </div>
+        <div class="d-flex justify-content-center align-items-center mt-3 aviso">
+            <p>Estos productos estan sujetos a cambios segundo los precios que nos pasan los proveedores.</p>
+        </div>
+        <div class="container-fluid row mb-3">
+            <div class="col-sm-12 col-md-6 text-center fw-bolder fs-2">
+                Si usted quiere saber las especificaciones de las tarjetas gráficas:
+            </div>
+            <div class="col-sm-12 col-md-6 text-center d-flex justify-content-center align-items-center">
+                <button type="button" class="btn btn-secondary btn-lg ">
+                    <a href="overclocks.html">Haga click aqui</a>
+                </button>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <div class="container-footer">
-            <div class="ubicacion-footer">
-                <h5>Ubicación</h5>
-                <div class="container-ubicacion">
-                    <div>
+    <footer class="container-fluid border-top">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <h5 class="m-4 fs-4">Ubicación</h5>
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex flex-column align-items-center gap-1">
                         <img class="iconos-footer" src="../iconos/location.svg" alt="ubi">
-                        <span class="sub-rayado">Av. Vélez Sarsfield 361</span>
+                        <span class="text-break sub-rayado ">Av. Vélez Sarsfield 361</span>
                     </div>
-                    <div>
+                    <div class="d-flex flex-column align-items-center gap-1">
                         <img class="iconos-footer" src="../iconos/phone.svg" alt="Telefono">
-                        <span class="sub-rayado">0351 570-4199</span>
+                        <span class="text-break sub-rayado ">0351 570-4199</span>
                     </div>
-                    <div>
+                    <div class="d-flex flex-column align-items-center gap-1">
                         <img class="iconos-footer" src="../iconos/envelope.svg" alt="Correo">
-                        <span class="sub-rayado">micorreo@miprimerapagina.com</span>
+                        <span class="text-break sub-rayado ">micorreo@miprimerapagina.com</span>
                     </div>
                 </div>
             </div>
-            <div class="iframe-footer">
+            <div class=" mt-4 col-sm-12 col-md-3 col-lg-3">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13619.171116966114!2d-64.1881822!3d-31.4198349!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a32dcf5d747f%3A0x40373220b29140ac!2sPatio%20Olmos%20Shopping!5e0!3m2!1ses!2sar!4v1650506057646!5m2!1ses!2sar"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13619.171116966114!2d-64.1881822!3d-31.4198349!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x40373220b29140ac!2sPatio%20Olmos%20Shopping!5e0!3m2!1ses!2sar!4v1651359018222!5m2!1ses!2sar"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="categorias-footer">
-                <h5>Categorias</h5>
-                <ul>
+            <div class="col-sm-12 col-md-3 col-lg-3 d-flex flex-column align-items-center">
+                <h5 class="m-4 fs-4">Categorias</h5>
+                <ul class="d-flex flex-column align-items-center gap-3 navegacion-footer">
                     <li>
                         <a href="../index.html">Home</a>
                     </li>
@@ -241,9 +270,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="seguinos-footer">
-                <h5>Seguinos!</h5>
-                <ul>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <h5 class="m-4 fs-4">Seguinos!</h5>
+                <ul class="d-flex justify-content-around">
                     <li>
                         <a href="https://www.facebook.com/olmos.shopping/" target="_blank"><img class="iconos-footer"
                                 src="../iconos/facebook.svg" alt="facebook"></a>
@@ -262,10 +291,15 @@
                     </li>
                 </ul>
             </div>
-
         </div>
+
     </footer>
 
+    <!-- Estilos Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
 </body>
 
 </html>
