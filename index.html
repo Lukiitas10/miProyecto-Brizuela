@@ -5,98 +5,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto de prueba</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
 </head>
 
-<body>
-    <header>
-        <nav class="contenedor-nav">
-            <div class="logo-nav">
-                <a href="index.html">
-                    <img class="logoPagina" src="iconos/logoPagina.svg" alt="logoPagina">
+<body class="bg-dark text-white ">
+    <header class="border-bottom">
+        <nav class=" navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class=" container-fluid ">
+                <a class=" navbar-brand d-flex flex-column align-items-center contenedor-logo rounded-2"
+                    href="index.html">
+                    <img class="logoPagina" src="iconos/logoPagina.svg" alt="Avatar Logo" style="width:40px;">
                     <span class="letraLogoPagina">Mi Proyecto</span>
                 </a>
-            </div>
-            <div class="navegacion-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/productos.html">Productos</a></li>
-                    <li><a href="pages/overclocks.html">Overclocks</a></li>
-                    <li><a href="pages/galeria.html">Galeria</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
-                </ul>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link rounded-2" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link rounded-2" href="pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-2" href="pages/overclocks.html">Overclocks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-2" href="pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
+
     <main>
-        <section class="container-titulo">
+        <section class="container-titulo d-flex flex-column justify-content-evenly">
             <h1 class="miTitulo">Mi Proyecto</h1>
-            <div class="carrusel">
-                <ul>
-                    <li>
-                        <img class="imagenRepresentativa"
-                            src="imagenes/ImagenIlustrativa-home/imagenIlustrativa-nvidia.svg"
-                            alt="imagenRepresentativa">
-                    </li>
-                    <li>
-                        <img class="imagenRepresentativa"
-                            src="imagenes/ImagenIlustrativa-home/imagenIlustrativa-amd2.svg" alt="imagenRepresentativa">
-                    </li>
-                    <li>
-                        <img src="imagenes/ImagenIlustrativa-home/EVGA-logo-3.svg" alt="evga"
-                            class="imagenRepresentativa">
-                    </li>
-                    <li>
-                        <img src="imagenes/ImagenIlustrativa-home/logoXFX.svg" alt="xfx" class="imagenRepresentativa">
-                    </li>
-                </ul>
+            <div id="indicadorCarrusel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagenes/ImagenIlustrativa-home/imagenIlustrativa-nvidia.svg" class="d-block w-100"
+                            style="height: 350px" alt="imagenIlustrativa-nvidia">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/ImagenIlustrativa-home/imagenIlustrativa-amd2.svg" class="d-block w-100 "
+                            style="height: 350px" alt="imagenIlustrativa-amd2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/ImagenIlustrativa-home/EVGA-logo-3.svg" class="d-block w-100"
+                            style="height: 350px" alt="EVGA-logo-3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/ImagenIlustrativa-home/logoXFX.svg" class="d-block w-100"
+                            style="height: 350px" alt="logoXFX">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#indicadorCarrusel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#indicadorCarrusel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
-
-        <section class="informacionTarjetas">
-            <div id="nvidia" class="informacionNvidia">
+        <section class="container-fluid row">
+            <div class="col-sm-12 col-md-6">
                 <h2>Nvidia</h2>
-                <p class="primeraLetraMayuscula verde">Nvidia Corporation es una empresa multinacional especializada en
+                <p class="primeraLetraMayuscula verde">Nvidia Corporation es una empresa multinacional especializada
+                    en
                     el
                     desarrollo de unidades de procesamiento gráfico y
                     tecnologías de circuitos integrados para estaciones de trabajo, ordenadores personales y
                     dispositivos móviles. Con sede
-                    en Santa Clara, California, la compañía se ha convertido en uno de los principales proveedores de
+                    en Santa Clara, California, la compañía se ha convertido en uno de los principales proveedores
+                    de
                     circuitos integrados
-                    (CI), como unidades de procesamiento gráfico (GPU) y conjuntos de chips usados en tarjetas gráficas
+                    (CI), como unidades de procesamiento gráfico (GPU) y conjuntos de chips usados en tarjetas
+                    gráficas
                     para consolas y
                     tarjetas madre para PC.
 
-                    Nvidia expandió su presencia en la industria de videojuego con su SHIELD Portable, SHIELD Tablet y
+                    Nvidia expandió su presencia en la industria de videojuego con su SHIELD Portable, SHIELD Tablet
+                    y
                     SHIELD Android TV.
                     Desde 2014, Nvidia ha cambiado para ser una compañía enfocada en cuatro mercados: gaming,
                     visualización profesional,
-                    centros de datos y auto. NVIDIA produce GPUs incluyendo la serie GeForce para videojuegos, la serie
+                    centros de datos y auto. NVIDIA produce GPUs incluyendo la serie GeForce para videojuegos, la
+                    serie
                     NVIDIA Quadro de
-                    diseño asistido por ordenador y la creación de contenido digital en las estaciones de trabajo, y la
+                    diseño asistido por ordenador y la creación de contenido digital en las estaciones de trabajo, y
+                    la
                     serie de circuitos
                     integrados nForce para placas base.</p>
             </div>
-            <div id="amd" class="informacionAmd">
+            <div class="col-sm-12 col-md-6">
                 <h2>Amd</h2>
-                <p class="primeraLetraMayuscula rojo">Advanced Micro Devices, Inc. (AMD) es una compañía estadounidense
+                <p class="primeraLetraMayuscula rojo">Advanced Micro Devices, Inc. (AMD) es una compañía
+                    estadounidense
                     de
                     semiconductores con sede en Santa Clara,
                     California, que desarrolla procesadores de computación y productos tecnológicos similares de
                     consumo. Sus productos
-                    principales incluyen microprocesadores, chipsets para placas base, circuitos integrados auxiliares,
+                    principales incluyen microprocesadores, chipsets para placas base, circuitos integrados
+                    auxiliares,
                     procesadores
-                    embebidos y procesadores gráficos para servidores, estaciones de trabajo, computadores personales y
+                    embebidos y procesadores gráficos para servidores, estaciones de trabajo, computadores
+                    personales y
                     aplicaciones para
                     sistemas embebidos.
 
-                    AMD es el segundo proveedor de microprocesadores basados en la arquitectura x86 y también uno de los
+                    AMD es el segundo proveedor de microprocesadores basados en la arquitectura x86 y también uno de
+                    los
                     más grandes
-                    fabricantes de unidades de procesamiento gráfico. También posee un 8,6 % de Spansion, un proveedor
+                    fabricantes de unidades de procesamiento gráfico. También posee un 8,6 % de Spansion, un
+                    proveedor
                     de memoria flash no
                     volátil.En 2011, AMD se ubicó en el lugar 11 en la lista de fabricantes de semiconductores en
                     términos de ingresos.</p>
@@ -104,34 +139,35 @@
 
         </section>
     </main>
-    <footer>
-        <div class="container-footer">
-            <div class="ubicacion-footer">
-                <h5>Ubicación</h5>
-                <div class="container-ubicacion">
-                    <div>
+
+    <footer class="container-fluid border-top">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <h5 class="m-4 fs-4">Ubicación</h5>
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex flex-column align-items-center gap-1">
                         <img class="iconos-footer" src="iconos/location.svg" alt="ubi">
-                        <span class="sub-rayado">Av. Vélez Sarsfield 361</span>
+                        <span class="text-break sub-rayado ">Av. Vélez Sarsfield 361</span>
                     </div>
-                    <div>
+                    <div class="d-flex flex-column align-items-center gap-1">
                         <img class="iconos-footer" src="iconos/phone.svg" alt="Telefono">
-                        <span class="sub-rayado">0351 570-4199</span>
+                        <span class="text-break sub-rayado ">0351 570-4199</span>
                     </div>
-                    <div>
+                    <div class="d-flex flex-column align-items-center gap-1">
                         <img class="iconos-footer" src="iconos/envelope.svg" alt="Correo">
-                        <span class="sub-rayado">micorreo@miprimerapagina.com</span>
+                        <span class="text-break sub-rayado ">micorreo@miprimerapagina.com</span>
                     </div>
                 </div>
             </div>
-            <div class="iframe-footer">
+            <div class=" mt-4 col-sm-12 col-md-3 col-lg-3">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13619.171116966114!2d-64.1881822!3d-31.4198349!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a32dcf5d747f%3A0x40373220b29140ac!2sPatio%20Olmos%20Shopping!5e0!3m2!1ses!2sar!4v1650506057646!5m2!1ses!2sar"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13619.171116966114!2d-64.1881822!3d-31.4198349!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x40373220b29140ac!2sPatio%20Olmos%20Shopping!5e0!3m2!1ses!2sar!4v1651359018222!5m2!1ses!2sar"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="categorias-footer">
-                <h5>Categorias</h5>
-                <ul>
+            <div class="col-sm-12 col-md-3 col-lg-3 d-flex flex-column align-items-center">
+                <h5 class="m-4 fs-4">Categorias</h5>
+                <ul class="d-flex flex-column align-items-center gap-3 navegacion-footer">
                     <li>
                         <a href="index.html">Home</a>
                     </li>
@@ -149,9 +185,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="seguinos-footer">
-                <h5>Seguinos!</h5>
-                <ul>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <h5 class="m-4 fs-4">Seguinos!</h5>
+                <ul class="d-flex justify-content-around">
                     <li>
                         <a href="https://www.facebook.com/olmos.shopping/" target="_blank"><img class="iconos-footer"
                                 src="iconos/facebook.svg" alt="facebook"></a>
@@ -170,9 +206,14 @@
                     </li>
                 </ul>
             </div>
-
         </div>
+
     </footer>
+    <!-- Estilos Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 
 </html>

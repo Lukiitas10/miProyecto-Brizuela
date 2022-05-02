@@ -1,12 +1,3 @@
-/* General */
-
-html {
-  background-color: #282c34;
-  color: #d0d4d7;
-  font-family: "Montserrat", sans-serif;
-  scroll-behavior: smooth;
-}
-
 ul {
   list-style: none;
   padding-left: 0px;
@@ -20,17 +11,32 @@ a {
 iframe {
   width: 100%;
 }
-/* Navegacion */
 
+.imagenRepresentativa {
+  width: 100%;
+  height: 350px;
+}
+
+.verde {
+  color: #78ba01;
+}
+.rojo {
+  color: #ed1c24;
+}
+
+/* Header */
 header {
-  background-image: url(imagenes/imagenDeFondo.jpg);
-  border-bottom: #808080 3px solid;
   position: sticky;
   top: 0px;
   z-index: 1000;
 }
+.contenedor-logo {
+  transition: all 0.4s ease;
+}
+.contenedor-logo:hover {
+  box-shadow: #ffffff 0px 1px 8px;
+}
 .logoPagina {
-  height: 31px;
   animation: rotacion 1s ease 0s 3 normal forwards;
 }
 @keyframes rotacion {
@@ -42,9 +48,7 @@ header {
     transform: rotate(360deg);
   }
 }
-
 .letraLogoPagina {
-  font-size: 20px;
   text-shadow: #d0d4d7 0 8px 8px;
   animation: agrandar 1s ease 0s 3 normal forwards;
 }
@@ -57,118 +61,41 @@ header {
     transform: scale(1);
   }
 }
-.contenedor-nav {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
-  align-items: center;
-}
-.logo-nav {
-  width: 120px;
+
+.nav-link {
   transition: all 0.4s ease;
 }
-.logo-nav:hover {
+.nav-link:hover {
   box-shadow: #ffffff 0px 1px 8px;
 }
-.logo-nav a {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.navegacion-nav {
-  width: -webkit-fill-available;
-}
-.navegacion-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.navegacion-nav ul li {
-  border: #808080 1.5px solid;
+.navegacion-footer li a {
   border-radius: 5px;
-  margin: 4px 0px;
   transition: all 0.4s ease;
 }
-.navegacion-nav ul li:hover {
+.navegacion-footer li a:hover {
   box-shadow: #ffffff 0px 1px 8px;
 }
-
-/* Main Index */
-main {
-  margin-top: 10px;
-  margin-bottom: 50px;
+.iconos-footer:hover {
+  box-shadow: #ffffff 0px 1px 8px;
+  border-radius: 5px;
 }
-
-.imagenRepresentativa {
-  width: 100%;
-  height: 350px;
-}
-
+/* Main */
 .container-titulo {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
-.carrusel {
-  width: 100%;
-  overflow: hidden;
+.primeraLetraMayuscula {
+  letter-spacing: 1px;
+  padding-top: 30px;
 }
-.carrusel ul {
-  display: flex;
-  width: 400%;
-  animation: slide 14s infinite alternate ease;
-}
-.carrusel li {
-  width: 100%;
-}
-@keyframes slide {
-  0% {
-    margin-left: 0;
-  }
-  20% {
-    margin-left: 0;
-  }
-
-  25% {
-    margin-left: -100%;
-  }
-  45% {
-    margin-left: -100%;
-  }
-
-  50% {
-    margin-left: -200%;
-  }
-  70% {
-    margin-left: -200%;
-  }
-
-  75% {
-    margin-left: -300%;
-  }
-  100% {
-    margin-left: -300%;
-  }
-}
-.miTitulo {
-  width: 100%;
-  color: transparent;
-  text-transform: uppercase;
-  font-size: 54px;
+.primeraLetraMayuscula::first-letter {
+  font-size: 48px;
   font-weight: bold;
+}
+
+h1,
+h2,
+h5 {
   text-align: center;
-
-  background-image: url(imagenes/paisaje-digital-en-atardece.jpg);
-  background-size: cover;
-  background-position-y: top;
-  background-clip: text;
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -191,37 +118,45 @@ h2:after {
   left: 50%;
   margin-left: -20px;
 }
-
-.primeraLetraMayuscula {
-  letter-spacing: 1px;
-  padding-top: 30px;
-}
-.verde {
-  color: #78ba01;
-}
-.rojo {
-  color: #ed1c24;
-}
-.primeraLetraMayuscula::first-letter {
-  font-size: 48px;
+.miTitulo {
+  width: 100%;
+  color: transparent;
+  text-transform: uppercase;
+  font-size: 54px;
   font-weight: bold;
+  text-align: center;
+
+  background-image: url(imagenes/paisaje-digital-en-atardece.jpg);
+  background-size: cover;
+  background-position-y: top;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.informacionTarjetas {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+@media screen and (min-width: 425px) {
+  .miTitulo {
+    font-size: 71px;
+  }
 }
-.informacionNvidia {
-  width: 97vw;
+@media screen and (min-width: 768px) {
+  .miTitulo {
+    font-size: 130px;
+  }
 }
-.informacionAmd {
-  width: 97vw;
+@media screen and (min-width: 1024px) {
+  .miTitulo {
+    font-size: 165px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .miTitulo {
+    font-size: 195px;
+  }
 }
 
-/* Procuctos */
-
+/* Productos */
 table {
-  border-collapse: collapse;
   margin: auto;
 }
 table thead th,
@@ -239,132 +174,45 @@ table tbody tr td {
 .fondo-amd {
   background-color: #ed1c24;
 }
+.aviso p {
+  border: solid;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 20px;
+  animation: pulso 2s ease 0s 3 normal forwards;
+}
+@keyframes pulso {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
 
-/* Overcloks */
-.centrado-subtitulo-tarjeta {
-  margin: 9px;
-  vertical-align: middle;
-}
-.centrado {
-  vertical-align: middle;
-}
-.container-card {
-  display: flex;
-  flex-wrap: wrap;
-}
-.caja-centrada {
-  width: 300px;
-  margin: 16px auto;
-  line-height: 2;
-  padding: 30px 0px;
-}
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
 
-@media screen and (min-width: 768px) {
-  .caja-centrada {
-    width: 700px;
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
   }
 }
-
-.container-card ul {
-  min-width: 250px;
-  min-height: 300px;
-}
-
-.nvidia-card {
-  border: 2px #78ba01 solid;
-  border-radius: 15px;
-  margin: 14px;
-  padding: 15px 0px;
-  transition: all 0.4s ease;
-}
-.nvidia-card ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.nvidia-card li {
-  margin: 9px 9px;
-}
-.nvidia-card:hover {
-  box-shadow: #78ba01 0px 0px 10px;
-}
-
-.amd-card {
-  border: 2px #ed1c24 solid;
-  border-radius: 15px;
-  margin: 14px;
-  padding: 15px 0px;
-  transition: all 0.4s ease;
-}
-.amd-card ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.amd-card li {
-  margin: 9px 9px;
-}
-.amd-card:hover {
-  box-shadow: #ed1c24 0px 0px 10px;
-}
-
-/* Galeria */
-
-.logoEvga {
-  height: 82px;
-  width: 300px;
-}
-.logoXfx {
-  width: 300px;
-  margin-bottom: 10px;
-}
-.galeriaFlex {
-  display: flex;
-  flex-wrap: wrap;
-}
-.tarjeta-img {
-  width: 294px;
-  height: 294px;
-}
-.cardAncho {
-  width: 295px;
-}
-/* Contanto */
-form {
-  border: #808080 5px solid;
-  border-radius: 34px;
-  padding: 10px 10px;
-  max-width: 800px;
-  margin: auto;
-  display: grid;
-  gap: 30px;
-}
-.formulario-boton {
-  display: flex;
-  justify-content: space-evenly;
-}
-.formulario {
-  padding: 10px 0px;
-}
-.formulario label {
-  cursor: pointer;
-}
-.formulario input {
-  border-radius: 3px;
-  transition: all ease 0.3s;
-}
-.formulario input:focus {
-  border: solid 3px rgba(30, 30, 164, 0.916);
-  outline: none;
-  box-shadow: 3px 0px 20px rgba(165, 165, 165, 0.4);
-}
-
 /* Footer */
-
-footer {
-  border-top: #808080 3px solid;
+.iconos-footer {
+  height: 30px;
+  width: 30px;
+  transition: all 0.4s ease;
 }
 .sub-rayado {
   display: inline-block;
@@ -396,166 +244,4 @@ footer {
 .sub-rayado:active:before {
   left: 0;
   right: 0;
-}
-h5 {
-  font-size: 20px;
-  text-align: center;
-  text-shadow: #d0d4d7 0 8px 8px;
-  letter-spacing: 3px;
-}
-.iconos-footer {
-  height: 30px;
-  width: 30px;
-}
-.container-footer {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.container-ubicacion {
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-  justify-content: space-around;
-  align-items: center;
-}
-.container-ubicacion div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
-
-.categorias-footer ul {
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-  justify-content: space-around;
-  align-items: center;
-}
-.categorias-footer ul li a:hover {
-  box-shadow: #ffffff 0px 1px 8px;
-  transition: box-shadow 0.4s ease;
-}
-.iframe-footer {
-  margin-top: 50px;
-}
-
-.seguinos-footer {
-  width: -webkit-fill-available;
-}
-.seguinos-footer ul {
-  display: flex;
-  justify-content: space-around;
-}
-.seguinos-footer ul li img {
-  border: #808080 1.45px solid;
-  border-radius: 5px;
-  transition: all 0.4s ease;
-}
-.seguinos-footer ul li img:hover {
-  box-shadow: #ffffff 0px 1px 8px;
-}
-
-/* Responsive */
-
-/* Main */
-@media screen and (min-width: 768px) {
-  .imagenRepresentativa {
-    width: 100%;
-    height: 200px;
-  }
-}
-
-/* Página Principal Titulo */
-@media screen and (min-width: 425px) {
-  .miTitulo {
-    font-size: 71px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .miTitulo {
-    font-size: 130px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .miTitulo {
-    font-size: 165px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .miTitulo {
-    font-size: 195px;
-  }
-}
-/* Tarjetas Del Inicio */
-@media screen and (min-width: 767px) {
-  .informacionTarjetas {
-    flex-direction: row;
-  }
-  .informacionNvidia {
-    width: 48%;
-  }
-  .informacionAmd {
-    width: 48%;
-  }
-}
-
-/* Overcloks */
-
-@media screen and (min-width: 768px) {
-  .nvidia-card {
-    margin: 18px;
-  }
-  .nvidia-card:hover {
-    transform: scale(1.1);
-    font-size: 18px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .amd-card {
-    margin: 18px;
-  }
-  .amd-card:hover {
-    transform: scale(1.1);
-    font-size: 18px;
-  }
-}
-
-/* Contacto */
-
-@media screen and (min-width: 768px) {
-  form {
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-  }
-  .span2 {
-    grid-column: 2 span;
-  }
-  .formulario-boton {
-    display: contents;
-  }
-  .formulario-boton button {
-    height: 50px;
-    width: 100px;
-  }
-}
-
-/* Footer */
-
-@media screen and (min-width: 767px) {
-  .container-footer {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .container-footer {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-  }
 }
