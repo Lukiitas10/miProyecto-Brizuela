@@ -25,6 +25,19 @@ iframe {
 }
 
 /* Header */
+
+.precios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  z-index: 1050;
+}
+@media screen and (min-width: 768px) {
+  .precios {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
 header {
   position: sticky;
   top: 0px;
@@ -62,12 +75,15 @@ header {
   }
 }
 
-.nav-link {
-  transition: all 0.4s ease;
+@media screen and (min-width: 768px) {
+  .nav-link {
+    transition: all 0.4s ease;
+  }
+  .nav-link:hover {
+    box-shadow: #ffffff 0px 1px 8px;
+  }
 }
-.nav-link:hover {
-  box-shadow: #ffffff 0px 1px 8px;
-}
+
 .navegacion-footer li a {
   border-radius: 5px;
   transition: all 0.4s ease;
