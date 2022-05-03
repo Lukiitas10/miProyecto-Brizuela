@@ -316,3 +316,26 @@ table tbody tr td {
 .tarjeta-img {
   height: 254px;
 }
+
+/* Contacto */
+
+form {
+  border: #808080 3px solid;
+  border-radius: 34px;
+  padding: 10px 10px;
+  max-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  form {
+    max-width: 400px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  form {
+    height: 700px;
+  }
+}
+.content {
+  display: contents;
+}
