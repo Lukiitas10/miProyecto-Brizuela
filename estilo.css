@@ -32,11 +32,6 @@ iframe {
   justify-items: center;
   z-index: 1050;
 }
-@media screen and (min-width: 768px) {
-  .precios {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
 
 header {
   position: sticky;
@@ -72,15 +67,6 @@ header {
 
   100% {
     transform: scale(1);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .nav-link {
-    transition: all 0.4s ease;
-  }
-  .nav-link:hover {
-    box-shadow: #ffffff 0px 1px 8px;
   }
 }
 
@@ -149,26 +135,6 @@ h2:after {
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-@media screen and (min-width: 425px) {
-  .miTitulo {
-    font-size: 71px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .miTitulo {
-    font-size: 130px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .miTitulo {
-    font-size: 165px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .miTitulo {
-    font-size: 195px;
-  }
 }
 
 /* Productos */
@@ -270,12 +236,6 @@ table tbody tr td {
   padding: 30px 0px;
 }
 
-@media screen and (min-width: 768px) {
-  .caja-centrada {
-    width: 700px;
-  }
-}
-
 .gpu-nvidia-icono {
   width: 120px;
   height: 22px;
@@ -293,12 +253,6 @@ table tbody tr td {
   box-shadow: #78ba01 0px 0px 10px;
 }
 
-@media screen and (min-width: 768px) {
-  .nvidia-card:hover {
-    transform: scale(1.05);
-    font-size: 18px;
-  }
-}
 .amd-card {
   border: 2px #ed1c24 solid;
   border-radius: 15px;
@@ -306,12 +260,6 @@ table tbody tr td {
 }
 .amd-card:hover {
   box-shadow: #ed1c24 0px 0px 10px;
-}
-@media screen and (min-width: 768px) {
-  .amd-card:hover {
-    transform: scale(1.05);
-    font-size: 18px;
-  }
 }
 
 /* Galeria */
@@ -420,6 +368,72 @@ form {
   margin-top: 4px;
 }
 
+.content {
+  display: contents;
+}
+
+/* Medias */
+
+/* Header */
+
+@media screen and (min-width: 768px) {
+  .precios {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-link {
+    transition: all 0.4s ease;
+  }
+  .nav-link:hover {
+    box-shadow: #ffffff 0px 1px 8px;
+  }
+}
+
+/* Main */
+@media screen and (min-width: 425px) {
+  .miTitulo {
+    font-size: 71px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .miTitulo {
+    font-size: 130px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .miTitulo {
+    font-size: 165px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .miTitulo {
+    font-size: 195px;
+  }
+}
+
+/* Overclocks */
+
+@media screen and (min-width: 768px) {
+  .caja-centrada {
+    width: 700px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nvidia-card:hover {
+    transform: scale(1.05);
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .amd-card:hover {
+    transform: scale(1.05);
+    font-size: 18px;
+  }
+}
+/* Contacto */
+
 @media screen and (min-width: 768px) {
   form {
     max-width: 400px;
@@ -429,7 +443,4 @@ form {
   form {
     height: 700px;
   }
-}
-.content {
-  display: contents;
 }
