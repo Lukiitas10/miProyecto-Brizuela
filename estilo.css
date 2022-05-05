@@ -314,7 +314,6 @@ form {
 .containers:after {
   content: "";
   height: 10px;
-  position: absolute;
   top: 390px;
   width: 100%;
 }
@@ -322,7 +321,6 @@ form {
   transform: scale(0.54);
 }
 .containers-inner {
-  position: relative;
   transform-origin: 50%;
   top: -200px;
 }
@@ -333,13 +331,11 @@ form {
   height: 380px;
   left: 10px;
   pointer-events: none;
-  position: absolute;
   top: 210px;
   width: 380px;
 }
 .img {
   pointer-events: none;
-  position: relative;
   transform: translateY(20px) scale(1.15);
   transform-origin: 50% bottom;
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
