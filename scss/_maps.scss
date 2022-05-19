@@ -1,0 +1,14 @@
+$icon: (
+  facebook: #3a5795,
+  youtube: #ff0000,
+  twitter: #55acee,
+  instagram: #c25e30,
+  coins: #d0d4d7,
+);
+
+@each $icono, $color in $icon {
+  .iconos-#{$icono} {
+    color: $color;
+    font-size: 1.5rem;
+  }
+}

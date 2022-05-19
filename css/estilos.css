@@ -1,3 +1,23 @@
+.iconos-facebook {
+  color: #3a5795;
+  font-size: 1.5rem; }
+
+.iconos-youtube {
+  color: #ff0000;
+  font-size: 1.5rem; }
+
+.iconos-twitter {
+  color: #55acee;
+  font-size: 1.5rem; }
+
+.iconos-instagram {
+  color: #c25e30;
+  font-size: 1.5rem; }
+
+.iconos-coins {
+  color: #d0d4d7;
+  font-size: 1.5rem; }
+
 /* Header */
 .precios {
   display: grid;
@@ -93,6 +113,7 @@ header {
 
 h1,
 h2,
+h3,
 h5 {
   text-align: center; }
 
