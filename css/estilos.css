@@ -1,3 +1,22 @@
+.caja-centrada, .caja-centrada--borde {
+  width: 300px;
+  margin: 16px auto;
+  line-height: 2;
+  padding: 30px 0px; }
+
+.caja-centrada--borde {
+  border: #808080 3px solid;
+  border-radius: 34px;
+  padding: 1rem; }
+
+.container-card-galeria {
+  width: 300px;
+  height: 430px; }
+
+.container-card-overclocks {
+  width: 300px;
+  height: 400px; }
+
 .iconos-facebook {
   color: #3a5795;
   font-size: 1.5rem; }
@@ -153,19 +172,9 @@ h2:after {
   -webkit-text-fill-color: transparent; }
 
 /* Overclocks */
-.caja-centrada {
-  width: 300px;
-  margin: 16px auto;
-  line-height: 2;
-  padding: 30px 0px; }
-
 .gpu-nvidia-icono {
   width: 120px;
   height: 22px; }
-
-.container-card {
-  width: 300px;
-  height: 400px; }
 
 .nvidia-card {
   border: 2px #78ba01 solid;
@@ -285,11 +294,8 @@ form {
   display: contents; }
 
 /* Galeria */
-.container-card-galeria {
-  width: 300px;
-  height: 430px; }
-  .container-card-galeria .tarjeta-img {
-    height: 254px; }
+.tarjeta-img {
+  height: 254px; }
 
 .logoEvga {
   height: 82px;
@@ -330,7 +336,7 @@ form {
 
 /* Overclocks */
 @media screen and (min-width: 768px) {
-  .caja-centrada {
+  .caja-centrada, .caja-centrada--borde {
     width: 700px; } }
 
 @media screen and (min-width: 768px) {

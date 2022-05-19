@@ -1,0 +1,12 @@
+.caja-centrada {
+  width: 300px;
+  margin: 16px auto;
+  line-height: 2;
+  padding: 30px 0px;
+}
+.caja-centrada--borde {
+  @extend .caja-centrada;
+  border: #808080 3px solid;
+  border-radius: 34px;
+  padding: 1rem;
+}
