@@ -12,10 +12,10 @@ table tbody tr td {
   width: 115px;
 }
 .fondo-nvidia {
-  background-color: #78ba01;
+  background-color: $color-nvidia;
 }
 .fondo-amd {
-  background-color: #ed1c24;
+  background-color: $color-amd;
 }
 .aviso p {
   border: solid;
