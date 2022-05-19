@@ -56,6 +56,7 @@ header {
 
 .logoPagina {
   width: 40px;
+  height: 40px;
   animation: rotacion 1s ease 0s 3 normal forwards; }
 
 @keyframes rotacion {
@@ -164,7 +165,7 @@ h2:after {
   font-size: 54px;
   font-weight: bold;
   text-align: center;
-  background-image: url(imagenes/paisaje-digital-en-atardece.jpg);
+  background-image: url(../imagenes/paisaje-digital-en-atardece.jpg);
   background-size: cover;
   background-position-y: top;
   background-clip: text;
@@ -194,7 +195,8 @@ h2:after {
 table {
   margin: auto; }
   table .amazonLogo {
-    width: 115px; }
+    width: 115px;
+    height: 34px; }
   table .fondo-nvidia {
     background-color: #78ba01; }
   table .fondo-amd {
