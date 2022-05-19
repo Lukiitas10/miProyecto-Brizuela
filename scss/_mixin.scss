@@ -1,0 +1,10 @@
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
+}
+.container-card-galeria {
+  @include sizes(300px, 430px);
+}
+.container-card-overclocks {
+  @include sizes(300px, 400px);
+}
