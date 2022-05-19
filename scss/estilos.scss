@@ -10,3 +10,29 @@
 @import "contacto";
 @import "galeria";
 @import "mediaquery";
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+a {
+  color: #d0d4d7;
+  text-decoration: none;
+}
+
+iframe {
+  width: 100%;
+}
+
+.imagenRepresentativa {
+  width: 100%;
+  height: 350px;
+}
+
+.verde {
+  color: #78ba01;
+}
+.rojo {
+  color: #ed1c24;
+}

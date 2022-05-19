@@ -1,0 +1,57 @@
+/* Header */
+
+.precios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  z-index: 1050;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+.contenedor-logo {
+  transition: all 0.4s ease;
+}
+.contenedor-logo:hover {
+  box-shadow: #ffffff 0px 1px 8px;
+}
+.logoPagina {
+  animation: rotacion 1s ease 0s 3 normal forwards;
+}
+@keyframes rotacion {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.letraLogoPagina {
+  text-shadow: #d0d4d7 0 8px 8px;
+  animation: agrandar 1s ease 0s 3 normal forwards;
+}
+@keyframes agrandar {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.navegacion-footer li a {
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+.navegacion-footer li a:hover {
+  box-shadow: #ffffff 0px 1px 8px;
+}
+.iconos-footer:hover {
+  box-shadow: #ffffff 0px 1px 8px;
+  border-radius: 5px;
+}

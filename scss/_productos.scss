@@ -1,0 +1,53 @@
+/* Productos */
+table {
+  margin: auto;
+}
+table thead th,
+table tbody tr td {
+  border: 5px solid;
+  width: 200px;
+  text-align: center;
+}
+.amazonLogo {
+  width: 115px;
+}
+.fondo-nvidia {
+  background-color: #78ba01;
+}
+.fondo-amd {
+  background-color: #ed1c24;
+}
+.aviso p {
+  border: solid;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 20px;
+  animation: pulso 2s ease 0s 3 normal forwards;
+}
+@keyframes pulso {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}

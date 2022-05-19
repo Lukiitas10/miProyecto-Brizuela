@@ -1,0 +1,55 @@
+/* Main */
+.container-titulo {
+  height: 100vh;
+}
+.primeraLetraMayuscula {
+  letter-spacing: 1px;
+  padding-top: 30px;
+}
+.primeraLetraMayuscula::first-letter {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h5 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  text-shadow: #d0d4d7 0 8px 8px;
+  letter-spacing: 14.5px;
+  display: block;
+  padding: 0 0 15px;
+  position: relative;
+}
+h2:after {
+  content: "";
+  display: block;
+  background: #d0d4d7;
+  width: 40px;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+}
+.miTitulo {
+  width: 100%;
+  color: transparent;
+  text-transform: uppercase;
+  font-size: 54px;
+  font-weight: bold;
+  text-align: center;
+
+  background-image: url(imagenes/paisaje-digital-en-atardece.jpg);
+  background-size: cover;
+  background-position-y: top;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
