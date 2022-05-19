@@ -36,6 +36,7 @@ header {
     box-shadow: #ffffff 0px 1px 8px; }
 
 .logoPagina {
+  width: 40px;
   animation: rotacion 1s ease 0s 3 normal forwards; }
 
 @keyframes rotacion {
