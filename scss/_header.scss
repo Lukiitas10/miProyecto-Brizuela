@@ -14,10 +14,11 @@ header {
 }
 .contenedor-logo {
   transition: all 0.4s ease;
+  &:hover {
+    box-shadow: #ffffff 0px 1px 8px;
+  }
 }
-.contenedor-logo:hover {
-  box-shadow: #ffffff 0px 1px 8px;
-}
+
 .logoPagina {
   animation: rotacion 1s ease 0s 3 normal forwards;
 }
@@ -47,11 +48,7 @@ header {
 .navegacion-footer li a {
   border-radius: 5px;
   transition: all 0.4s ease;
-}
-.navegacion-footer li a:hover {
-  box-shadow: #ffffff 0px 1px 8px;
-}
-.iconos-footer:hover {
-  box-shadow: #ffffff 0px 1px 8px;
-  border-radius: 5px;
+  &:hover {
+    box-shadow: #ffffff 0px 1px 8px;
+  }
 }

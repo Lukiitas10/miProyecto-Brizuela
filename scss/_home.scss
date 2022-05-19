@@ -5,10 +5,10 @@
 .primeraLetraMayuscula {
   letter-spacing: 1px;
   padding-top: 30px;
-}
-.primeraLetraMayuscula::first-letter {
-  font-size: 48px;
-  font-weight: bold;
+  &::first-letter {
+    font-size: 48px;
+    font-weight: bold;
+  }
 }
 
 h1,

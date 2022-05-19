@@ -1,6 +1,15 @@
 /* Productos */
 table {
   margin: auto;
+  .amazonLogo {
+    width: 115px;
+  }
+  .fondo-nvidia {
+    background-color: $color-nvidia;
+  }
+  .fondo-amd {
+    background-color: $color-amd;
+  }
 }
 table thead th,
 table tbody tr td {
@@ -8,15 +17,7 @@ table tbody tr td {
   width: 200px;
   text-align: center;
 }
-.amazonLogo {
-  width: 115px;
-}
-.fondo-nvidia {
-  background-color: $color-nvidia;
-}
-.fondo-amd {
-  background-color: $color-amd;
-}
+
 .aviso p {
   border: solid;
   font-size: 22px;

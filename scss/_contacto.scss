@@ -13,62 +13,61 @@ form {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
-}
-.person {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 280px;
-}
-.containers {
-  border-radius: 50%;
-  height: 312px;
-  -webkit-tap-highlight-color: transparent;
-  transform: scale(0.48);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 400px;
-}
+  .person {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+  }
+  .containers {
+    border-radius: 50%;
+    height: 312px;
+    -webkit-tap-highlight-color: transparent;
+    transform: scale(0.48);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 400px;
+    &:hover {
+      transform: scale(0.54);
+    }
+  }
 
-.containers:hover {
-  transform: scale(0.54);
-}
+  .circle {
+    background-color: #fee7d3;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 380px;
+    pointer-events: none;
+    width: 380px;
+  }
+  .img {
+    pointer-events: none;
+    transform: translateY(20px) scale(1.15);
+    transform-origin: 50% bottom;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .containers:hover .img {
+    transform: translateY(0) scale(1.2);
+  }
 
-.circle {
-  background-color: #fee7d3;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 380px;
-  pointer-events: none;
-  width: 380px;
-}
-.img {
-  pointer-events: none;
-  transform: translateY(20px) scale(1.15);
-  transform-origin: 50% bottom;
-  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.containers:hover .img {
-  transform: translateY(0) scale(1.2);
-}
-
-.divider {
-  background-color: #ca6060;
-  height: 1px;
-  width: 160px;
-}
-.name {
-  color: #404245;
-  font-size: 36px;
-  font-weight: 600;
-  margin-top: 16px;
-  text-align: center;
-}
-.title {
-  color: #6e6e6e;
-  font-family: arial;
-  font-size: 14px;
-  font-style: italic;
-  margin-top: 4px;
+  .divider {
+    background-color: #ca6060;
+    height: 1px;
+    width: 160px;
+  }
+  .name {
+    color: #404245;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 16px;
+    text-align: center;
+  }
+  .title {
+    color: #6e6e6e;
+    font-family: arial;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 4px;
+  }
 }
 
 .content {

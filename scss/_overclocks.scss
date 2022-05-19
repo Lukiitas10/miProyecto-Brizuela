@@ -18,16 +18,15 @@
   border: 2px $color-nvidia solid;
   border-radius: 15px;
   transition: all 0.4s ease;
+  &:hover {
+    box-shadow: $color-nvidia 0px 0px 10px;
+  }
 }
-.nvidia-card:hover {
-  box-shadow: $color-nvidia 0px 0px 10px;
-}
-
 .amd-card {
   border: 2px $color-amd solid;
   border-radius: 15px;
   transition: all 0.4s ease;
-}
-.amd-card:hover {
-  box-shadow: $color-amd 0px 0px 10px;
+  &:hover {
+    box-shadow: $color-amd 0px 0px 10px;
+  }
 }
