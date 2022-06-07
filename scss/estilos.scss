@@ -11,6 +11,13 @@
 @import "galeria";
 @import "mediaquery";
 
+* {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+footer {
+  margin-bottom: 1.5rem;
+}
 ul {
   list-style: none;
   padding-left: 0px;
