@@ -11,7 +11,7 @@
 
 .container-card-galeria {
   width: 300px;
-  height: 430px; }
+  height: 475px; }
 
 .container-card-overclocks {
   width: 300px;
@@ -359,6 +359,13 @@ form {
 @media screen and (min-width: 1024px) {
   form {
     height: 700px; } }
+
+* {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth; }
+
+footer {
+  margin-bottom: 1.5rem; }
 
 ul {
   list-style: none;
